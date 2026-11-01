@@ -140,14 +140,6 @@ cargo clippy --all-targets
 - PNG tiles carry no georeferencing and are not web-map tiles.
 - No cloud masking: clouds are bright in both bands and are colored like anything else.
 
-## Future Roadmap
-
-1. **Windowed reading**: read only the needed part of a cloud-hosted GeoTIFF over HTTP, using a crate such as [`async-geotiff`](https://docs.rs/crate/async-geotiff/latest)
-2. **Python bindings** with PyO3 and `maturin`, so a Streamlit app can call the Rust core
-3. **Georeferenced or XYZ tiles**, which needs reprojection
-4. **`rayon`** in place of the hand-written threading, and `criterion` for proper benchmarks
-5. **Cloud masking** using the scene classification band
-
 ## License
 
 This project is released under the [MIT License](LICENSE).
