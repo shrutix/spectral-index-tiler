@@ -1,0 +1,15 @@
+[package]
+name = "spectral-tiler"
+version = "0.1.0"
+edition = "2021"
+description = "Command-line tool that turns two satellite bands into NDVI or NDWI PNG tiles"
+
+[dependencies]
+spectral-core = { path = "../spectral-core" }
+clap = { version = "4", features = ["derive"] }
+thiserror = "2"
+tiff = "0.9"
+png = "0.17"
+
+[dev-dependencies]
+tempfile = "3"

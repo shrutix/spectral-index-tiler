@@ -1,0 +1,7 @@
+[workspace]
+resolver = "2"
+members = ["crates/spectral-core", "crates/spectral-tiler"]
+
+[profile.release]
+lto = true
+codegen-units = 1

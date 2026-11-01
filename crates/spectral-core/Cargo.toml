@@ -1,0 +1,8 @@
+[package]
+name = "spectral-core"
+version = "0.1.0"
+edition = "2021"
+description = "Dependency-free core for spectral index tiling: index math, colormaps, tiling, statistics"
+
+# Deliberately no dependencies: everything here is plain Rust and compiles offline.
+[dependencies]
